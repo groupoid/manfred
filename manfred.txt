@@ -49,6 +49,22 @@ Element := Type Id "=" Exp
 
 FunctionDef := "fct" Id "=" AbsFun
 
+4.3.2 Нерухома точка
+
+fix
+
+4.4.5 Взаємна рекурсія
+
+4.5.1 Специфікації
+
+fct div = (nat n, nat m: m > 0) nat
+
+<=>
+
+forall nat n, nat m: not(m>0) => div(n,m) = bottom.
+
+5.1.1 Оператори
+
 Notes
 -----
 
